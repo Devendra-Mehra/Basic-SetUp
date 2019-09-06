@@ -1,21 +1,14 @@
 package com.example.basesetup
 
 import android.os.Bundle
-import android.util.Log
-import com.example.basesetup.base.BaseActivity
-import com.example.basesetup.databinding.ActivityMainBinding
+import androidx.appcompat.app.AppCompatActivity
+import dagger.android.AndroidInjection
 
-class MainActivity : BaseActivity<ActivityMainBinding>() {
-    override fun getLayoutResource() = R.layout.activity_main
-
-
-    override fun setUp() {
-
-    }
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        AndroidInjection.inject(this)
         super.onCreate(savedInstanceState)
-        Log.d("", "")
-
+        setContentView(R.layout.activity_main)
     }
 }
