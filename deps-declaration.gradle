@@ -15,6 +15,7 @@ def versions = [
         'picasso'         : '2.71828',
         'materialDialog'  : '3.1.0',
         'dagger'          : '2.22.1',
+        'easypermissions' : '3.0.0',
         'room'            : '2.2.0-alpha02'
 
 ]
@@ -62,7 +63,10 @@ def deps = [
                 'daggerAnnotation'       : "com.google.dagger:dagger-compiler:${versions.dagger}",
                 'daggerAndroid'          : "com.google.dagger:dagger-android:${versions.dagger}",
                 'daggerAndroidSupport'   : "com.google.dagger:dagger-android-support:${versions.dagger}",
-                'daggerAndroidAnnotation': "com.google.dagger:dagger-android-processor:${versions.dagger}"
+                'daggerAndroidAnnotation': "com.google.dagger:dagger-android-processor:${versions.dagger}",
+                'easypermissions'        : "pub.devrel:easypermissions:${versions.easypermissions}"
+
+
         ]
 
 

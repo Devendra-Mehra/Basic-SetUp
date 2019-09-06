@@ -24,6 +24,8 @@ dependencies {
     implementation deps.google.daggerAndroid
     implementation deps.google.daggerAndroidSupport
     kapt deps.google.daggerAndroidAnnotation
+    //easy permissions
+    implementation deps.google.easypermissions
 
 
 }
