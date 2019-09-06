@@ -1,0 +1,29 @@
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //support
+    implementation deps.support.appCompat
+    implementation deps.support.material
+    implementation deps.support.cardview
+    implementation deps.support.constraintlayout
+    //kotlin
+    implementation deps.kotlin.stdlib
+    implementation deps.kotlin.ktx
+    //stetho
+    implementation deps.facebook.stetho
+    implementation deps.facebook.stetho_okhttp3
+    //reactive
+    implementation deps.reactive.rxjava
+    implementation deps.reactive.rxAndroid
+    //view model and live data
+    implementation deps.google.lifecycle
+    //material_dialogs
+    implementation deps.afollestad.materialDialog
+    //dagger
+    implementation deps.google.dagger
+    kapt deps.google.daggerAnnotation
+    implementation deps.google.daggerAndroid
+    implementation deps.google.daggerAndroidSupport
+    kapt deps.google.daggerAndroidAnnotation
+
+
+}
